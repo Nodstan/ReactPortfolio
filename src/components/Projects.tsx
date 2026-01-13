@@ -14,7 +14,7 @@ import sushiman from '../assets/sushiman.png'
 import xspace from '../assets/x-space.png'
 import profilehero from '../assets/profilehero.jpg'
 import resumeimage from '../assets/resume.png'
-import Facebook from '../assets/Facebook.png'
+import Facebook from '../assets/facebook.png'
 import Home from "../assets/crypto.jpg";
 import Buycom from "../assets/buycom.png";
 
