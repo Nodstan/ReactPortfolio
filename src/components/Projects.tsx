@@ -4,16 +4,7 @@ import { ExternalLink, Github, Eye } from "lucide-react";
 
 // Images
 import healthhub from "../assets/Healthhub.png";
-import fgclothings from "../assets/fgclothings.png";
-import fransispets from "../assets/fransispet.png";
-import emanninsite from "../assets/emanninsite.png";
 import springImage from "../assets/SpringBoot.jpg";
-import ramoniktravel from "../assets/ramoniktravel.png";
-import nexx from "../assets/nexx.png";
-import sushiman from '../assets/sushiman.png'
-import xspace from '../assets/x-space.png'
-import profilehero from '../assets/profilehero.jpg'
-import resumeimage from '../assets/resume.png'
 import Facebook from '../assets/facebook.png'
 import Home from "../assets/crypto.jpg";
 import Buycom from "../assets/buycom.png";
@@ -28,14 +19,14 @@ const projects = [
       "A modern and interactive platform for managing healthcare services, appointments, and patient information.",
     tags: ["React", "Spring Boot", "MongoDB", "CSS"],
     link: "https://health-care-systems-nine.vercel.app/",
-    github: "https://github.com/emannnx/HealthCareSystems",
+    github: "https://github.com/NodStan/HealthCareSystems",
   },
   {
     id: 2,
     title: "Estate Flow",
     image: estateflow,
     description:
-      "A comprehensive admin dashboard with data visualization and management features.",
+      "EstateFlow is a sleek, modern real-estate web application designed to help users browse, filter, and explore properties with a smooth and intuitive experience.",
     tags: ["React", "TypeScript", "Tailwind CSS"],
     link: "https://real-estate-ashen-gamma.vercel.app/",
     github: "https://github.com/Nodstan/RealEstate.git",
@@ -58,7 +49,7 @@ const projects = [
       "A web application that provides personalized nutrition plans and dietary recommendations.",
     tags: ["Spring Boot", "MongoDB"],
     link: "https://nutritional-guide.onrender.com",
-    github: "https://github.com/emannnx/NutritionGuide",
+    github: "https://github.com/Nodstan/NutritionGuide",
   },
   {
     id: 5,
@@ -90,26 +81,6 @@ const projects = [
     link: "",
     github: "https://github.com/Nodstan/BuyCom.git",
   },
-  // {
-  //   id: 8,
-  //   title: "Sushiman",
-  //   image: sushiman,
-  //   description:
-  //     "Sushiman delivers fresh, handcrafted sushi and Japanese-inspired meals with a commitment to quality, flavor, and exceptional customer experience.",
-  //   tags: ["HTML", "JavaScript", "CSS"],
-  //   link: "https://sushiman-emannx.vercel.app/",
-  //   github: "https://github.com/emannnx/Sushiman-emannx",
-  // },
-  // {
-  //   id: 9,
-  //   title: "X-Space",
-  //   image: xspace,
-  //   description:
-  //     "X-Space delivers innovative digital solutions designed to help individuals and businesses connect, create, and thrive in a fast-evolving tech landscape.",
-  //   tags: ["React", "TypeScript", "Supabase", "CSS"],
-  //   link: "https://x-space-emannx.vercel.app/",
-  //   github: "https://github.com/emannnx/x-space-emannx",
-  // },
 ];
 
 
