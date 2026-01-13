@@ -69,7 +69,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
+    <section id="contact" className="py-20 bg-gradient-to-b from-gray-50 to-white dark:from-portfolio-dark dark:to-portfolio-dark relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-64 bg-portfolio-secondary/30 -z-10 transform -skew-y-6"></div>
       
       <div className="container mx-auto px-4">
@@ -77,9 +77,9 @@ const Contact = () => {
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 mt-12">
           <div className="lg:col-span-1">
-            <div className="bg-white p-8 rounded-2xl shadow-xl h-full">
+            <div className="bg-card p-8 rounded-2xl shadow-xl h-full">
               <h3 className="text-2xl font-semibold mb-6 text-portfolio-primary">Let's Connect</h3>
-              <p className="text-gray-600 mb-8">
+              <p className="text-muted-foreground mb-8">
                 Feel free to reach out to me for any inquiries or collaboration opportunities. I'm always excited to discuss new projects and ideas.
               </p>
               
@@ -89,7 +89,7 @@ const Contact = () => {
                     <Mail size={20} className="text-portfolio-primary" />
                   </div>
                   <div>
-                    <h4 className="font-medium text-gray-900">Email</h4>
+                    <h4 className="font-medium text-gray-900 dark:text-white">Email</h4>
                     <a href="mailto:stanleyobitunwase@gmail.com">stanleyobitunwase@gmail.com</a>
                   </div>
                 </div>
@@ -99,8 +99,8 @@ const Contact = () => {
                     <Phone size={20} className="text-portfolio-primary" />
                   </div>
                   <div>
-                    <h4 className="font-medium text-gray-900">Phone</h4>
-                    <p className="text-gray-600">+234-81-4169-1876</p>
+                    <h4 className="font-medium text-gray-900 dark:text-white">Phone</h4>
+                    <p className="text-muted-foreground">+234-81-4169-1876</p>
                   </div>
                 </div>
                 
@@ -109,20 +109,20 @@ const Contact = () => {
                     <MapPin size={20} className="text-portfolio-primary" />
                   </div>
                   <div>
-                    <h4 className="font-medium text-gray-900">Location</h4>
-                    <p className="text-gray-600">Nigeria</p>
+                    <h4 className="font-medium text-gray-900 dark:text-white">Location</h4>
+                    <p className="text-muted-foreground">Nigeria</p>
                   </div>
                 </div>
               </div>
               
               <div className="mt-10 pt-8 border-t border-gray-100">
-                <h4 className="font-medium text-gray-900 mb-4">Follow Me</h4>
+                <h4 className="font-medium text-gray-900 dark:text-white mb-4">Follow Me</h4>
                 <div className="flex space-x-3">
                   <a 
                     href="https://web.facebook.com/profile.php?id=61559751033177" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="bg-gray-100 p-3 rounded-full hover:bg-portfolio-primary hover:text-white transition-all duration-500"
+                    className="bg-gray-100 dark:bg-white/10 p-3 rounded-full hover:bg-portfolio-primary hover:text-white transition-all duration-500"
                     aria-label="Facebook"
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
@@ -131,7 +131,7 @@ const Contact = () => {
                     href="https://medium.com/@stanleyobitunwase" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="bg-gray-100 p-3 rounded-full hover:bg-portfolio-primary hover:text-white transition-all duration-500"
+                    className="bg-gray-100 dark:bg-white/10 p-3 rounded-full hover:bg-portfolio-primary hover:text-white transition-all duration-500"
                     aria-label="Medium"
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" strokeWidth="0" strokeLinecap="round" strokeLinejoin="round">
@@ -142,7 +142,7 @@ const Contact = () => {
                     href="" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="bg-gray-100 p-3 rounded-full hover:bg-portfolio-primary hover:text-white transition-all duration-500"
+                    className="bg-gray-100 dark:bg-white/10 p-3 rounded-full hover:bg-portfolio-primary hover:text-white transition-all duration-500"
                     aria-label="LinkedIn"
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
@@ -153,7 +153,7 @@ const Contact = () => {
           </div>
           
           <div className="lg:col-span-2">
-            <div className="bg-white p-8 rounded-2xl shadow-xl">
+            <div className="bg-card p-8 rounded-2xl shadow-xl">
               <div className="flex items-center mb-6">
                 <h3 className="text-2xl font-semibold">Send Me a Message</h3>
               </div>
@@ -161,7 +161,7 @@ const Contact = () => {
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <label htmlFor="name" className="text-sm font-medium text-gray-700">Full Name</label>
+                    <label htmlFor="name" className="text-sm font-medium text-gray-700 dark:text-gray-200">Full Name</label>
                     <Input
                       id="name"
                       type="text"
@@ -174,7 +174,7 @@ const Contact = () => {
                     />
                   </div>
                   <div className="space-y-2">
-                    <label htmlFor="email" className="text-sm font-medium text-gray-700">Email Address</label>
+                    <label htmlFor="email" className="text-sm font-medium text-gray-700 dark:text-gray-200">Email Address</label>
                     <Input
                       id="email"
                       type="email"
@@ -190,7 +190,7 @@ const Contact = () => {
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <label htmlFor="phone" className="text-sm font-medium text-gray-700">Phone Number (Optional)</label>
+                    <label htmlFor="phone" className="text-sm font-medium text-gray-700 dark:text-gray-200">Phone Number (Optional)</label>
                     <Input
                       id="phone"
                       type="tel"
@@ -202,7 +202,7 @@ const Contact = () => {
                     />
                   </div>
                   <div className="space-y-2">
-                    <label htmlFor="subject" className="text-sm font-medium text-gray-700">Subject</label>
+                    <label htmlFor="subject" className="text-sm font-medium text-gray-700 dark:text-gray-200">Subject</label>
                     <Input
                       id="subject"
                       type="text"
@@ -217,7 +217,7 @@ const Contact = () => {
                 </div>
                 
                 <div className="space-y-2">
-                  <label htmlFor="message" className="text-sm font-medium text-gray-700">Your Message</label>
+                  <label htmlFor="message" className="text-sm font-medium text-gray-700 dark:text-gray-200">Your Message</label>
                   <Textarea
                     id="message"
                     name="message"

@@ -10,7 +10,7 @@ import mypic from '../assets/mypic.jpg'
 
 const Hero = () => {
   return (
-    <section id="home" className="pt-28 pb-20 md:py-36 min-h-screen flex items-center bg-gradient-to-b from-portfolio-secondary/20 to-white overflow-hidden">
+    <section id="home" className="pt-28 pb-20 md:py-36 min-h-screen flex items-center bg-gradient-to-b from-portfolio-secondary/20 to-white dark:from-portfolio-dark dark:to-portfolio-dark overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
           <motion.div 
@@ -39,7 +39,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.4, ease: "easeOut" }}
-              className="text-gray-600 mb-8 max-w-lg text-lg"
+              className="text-muted-foreground mb-8 max-w-lg text-lg"
             >
               Software Engineer proficient in HTML, CSS, JavaScript, TypeScript, React, React-Native, and Spring Boot, with a strong passion for creating dynamic and engaging user experiences.
             </motion.p>
@@ -138,7 +138,7 @@ const Hero = () => {
                 initial={{ rotate: 3 }}
                 whileHover={{ rotate: 0 }}
                 transition={{ duration: 0.5 }}
-                className="relative z-10 bg-white p-3 rounded-2xl shadow-xl"
+                className="relative z-10 bg-card p-3 rounded-2xl shadow-xl"
               >
                 <motion.img 
                   initial={{ scale: 0.9, opacity: 0 }}
@@ -153,7 +153,7 @@ const Hero = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.8 }}
-                  className="absolute -bottom-5 -right-5 bg-white p-3 rounded-lg shadow-lg"
+                  className="absolute -bottom-5 -right-5 bg-card p-3 rounded-lg shadow-lg"
                 >
                   <div className="flex items-center space-x-2 px-3 py-1">
                     <motion.span 

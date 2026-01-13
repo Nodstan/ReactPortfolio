@@ -150,7 +150,7 @@ const ProjectCard = ({ project }) => {
 
       <CardContent className="pt-5 px-2">
         <h3 className="font-semibold text-lg mb-1">{project.title}</h3>
-        <p className="text-gray-600 text-sm line-clamp-2">
+        <p className="text-muted-foreground text-sm line-clamp-2">
           {project.description}
         </p>
       </CardContent>
@@ -166,7 +166,7 @@ const Projects = () => {
   };
 
   return (
-    <section id="projects" className="py-20 bg-gradient-to-b from-white to-gray-50">
+    <section id="projects" className="py-20 bg-gradient-to-b from-white to-gray-50 dark:from-portfolio-dark dark:to-portfolio-dark">
       <div className="container mx-auto px-4">
         <h2 className="section-heading text-center mx-auto">
           My <span className="text-portfolio-primary">Projects</span>

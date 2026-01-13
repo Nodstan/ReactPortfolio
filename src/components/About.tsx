@@ -11,7 +11,7 @@ import pexel from "../assets/image.jpg"
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-gradient-to-b from-white to-gray-50">
+    <section id="about" className="py-20 bg-gradient-to-b from-white to-gray-50 dark:from-portfolio-dark dark:to-portfolio-dark">
       <div className="container mx-auto px-4">
         <h2 className="section-heading text-center mx-auto">About <span className="text-portfolio-primary">Me</span></h2>
         
@@ -39,15 +39,15 @@ const About = () => {
           </div>
           
           <div className="w-full md:w-3/5 order-1 md:order-2">
-            <div className="glass-card p-8 relative">
+            <div className="glass-card p-8 relative dark:bg-background/40">
               <h3 className="text-2xl font-semibold mb-6 text-portfolio-primary">Software Engineer</h3>
-              <p className="text-gray-700 mb-6 leading-relaxed">
+              <p className="text-muted-foreground mb-6 leading-relaxed">
                 I'm a Software Engineer with expertise in HTML, CSS, JavaScript, React, React Native, and Java. I'm dedicated to developing sophisticated and user-centric web and mobile applications with a focus on creating seamless and intuitive user experiences.
               </p>
-              <p className="text-gray-700 mb-6 leading-relaxed">
+              <p className="text-muted-foreground mb-6 leading-relaxed">
                 My technical arsenal includes Tailwind CSS for crafting beautiful UI designs, UI/UX design principles for creating intuitive interfaces, and expertise in Java for backend development. I specialize in translating complex design concepts into fully functional and interactive digital solutions.
               </p>
-              <p className="text-gray-700 mb-8 leading-relaxed">
+              <p className="text-muted-foreground mb-8 leading-relaxed">
                 Driven by a continuous learning mindset, I am eager to contribute to and collaborate on forward-thinking projects that push the boundaries of what's possible in web and mobile development.
               </p>
               
@@ -57,7 +57,7 @@ const About = () => {
                   GitHub Profile
                 </a>
                 
-                <a href="#contact" className="inline-flex items-center px-5 py-2.5 text-portfolio-dark bg-portfolio-secondary/30 rounded-xl hover:bg-portfolio-secondary/50 transition-all duration-500">
+                <a href="#contact" className="inline-flex items-center px-5 py-2.5 text-portfolio-dark dark:text-white bg-portfolio-secondary/30 dark:bg-white/10 rounded-xl hover:bg-portfolio-secondary/50 transition-all duration-500">
                   Get in Touch
                 </a>
               </div>
@@ -80,12 +80,12 @@ const About = () => {
               description: "Working with Java and database technologies to create robust backend solutions."
             }
           ].map((service, index) => (
-            <div key={index} className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-500">
+            <div key={index} className="bg-card p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-500">
               <div className="bg-portfolio-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-portfolio-primary text-xl font-bold">{index + 1}</span>
               </div>
               <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
-              <p className="text-gray-600">{service.description}</p>
+              <p className="text-muted-foreground">{service.description}</p>
             </div>
           ))}
         </div>

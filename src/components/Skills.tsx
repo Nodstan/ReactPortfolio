@@ -45,7 +45,7 @@ const SkillBar = ({ skill, index }) => {
       className="mb-8"
     >
       <div className="flex justify-between mb-2">
-        <h4 className="font-medium">{skill.name}</h4>
+        <h4 className="font-medium text-white">{skill.name}</h4>
         <span className="text-portfolio-primary font-semibold">{skill.level}%</span>
       </div>
       <div className="skill-bar">
@@ -73,9 +73,9 @@ const TechBadge = ({ tech, index }) => {
         boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
         transition: { duration: 0.5 }
       }}
-      className="bg-white p-5 rounded-xl shadow-md border border-gray-100"
+      className="bg-card p-5 rounded-xl shadow-md border border-border text-card-foreground"
     >
-      <span className="font-medium text-gray-800">{tech}</span>
+      <span className="font-medium text-white">{tech}</span>
     </motion.div>
   );
 };
@@ -85,7 +85,7 @@ const Skills = () => {
   const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
 
   return (
-    <section id="skills" ref={sectionRef} className="py-20 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+    <section id="skills" ref={sectionRef} className="py-20 bg-gradient-to-b from-gray-50 to-white dark:from-portfolio-dark dark:to-portfolio-dark overflow-hidden">
       <div className="container mx-auto px-4">
         <motion.h2 
           initial={{ opacity: 0, y: -20 }}
@@ -103,7 +103,7 @@ const Skills = () => {
           className="max-w-3xl mx-auto mt-12"
         >
           <Tabs defaultValue="coding" className="w-full">
-            <TabsList className="grid grid-cols-2 mb-8 bg-portfolio-secondary/20">
+            <TabsList className="grid grid-cols-2 mb-8 bg-portfolio-secondary/20 dark:bg-white/10">
               <TabsTrigger value="coding" className="text-lg py-3">
                 Coding Skills
               </TabsTrigger>
@@ -112,7 +112,7 @@ const Skills = () => {
               </TabsTrigger>
             </TabsList>
             
-            <TabsContent value="coding" className="bg-white p-8 rounded-2xl shadow-lg">
+            <TabsContent value="coding" className="bg-card p-8 rounded-2xl shadow-lg">
               <div>
                 {codingSkills.map((skill, index) => (
                   <SkillBar key={index} skill={skill} index={index} />
@@ -120,7 +120,7 @@ const Skills = () => {
               </div>
             </TabsContent>
             
-            <TabsContent value="professional" className="bg-white p-8 rounded-2xl shadow-lg">
+            <TabsContent value="professional" className="bg-card p-8 rounded-2xl shadow-lg">
               <div>
                 {professionalSkills.map((skill, index) => (
                   <SkillBar key={index} skill={skill} index={index} />

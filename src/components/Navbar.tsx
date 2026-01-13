@@ -29,7 +29,7 @@ const Navbar = () => {
   const navItems = ['home', 'about', 'projects', 'skills', 'contact'];
 
   return (
-    <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${scrolled ? 'bg-white/95 backdrop-blur-sm shadow-md py-3' : 'bg-transparent py-5'}`}>
+    <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${scrolled ? 'bg-white/95 dark:bg-portfolio-dark/90 backdrop-blur-sm shadow-md py-3' : 'bg-transparent py-5'}`}>
       <div className="container mx-auto px-4 flex justify-between items-center">
         <motion.a 
           href="#" 
@@ -57,7 +57,7 @@ const Navbar = () => {
               transition={{ duration: 0.5, delay: 0.1 * index }}
               whileHover={{ scale: 1.1 }}
               href={`#${item}`} 
-              className={`font-medium capitalize transition-colors duration-500 relative group ${scrolled ? 'text-gray-800' : 'text-gray-900'}`}
+              className={`font-medium capitalize transition-colors duration-500 relative group ${scrolled ? 'text-gray-800 dark:text-gray-200' : 'text-gray-900 dark:text-gray-100'}`}
             >
               {item}
               <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-portfolio-primary transition-all duration-500 group-hover:w-full"></span>
@@ -70,7 +70,7 @@ const Navbar = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className={`md:hidden p-2 rounded-full ${scrolled ? 'text-gray-800 bg-gray-100' : 'text-gray-900 bg-white/30'}`}
+          className={`md:hidden p-2 rounded-full ${scrolled ? 'text-gray-800 dark:text-gray-100 bg-gray-100 dark:bg-white/10' : 'text-gray-900 dark:text-gray-100 bg-white/30 dark:bg-white/10'}`}
           onClick={toggleMenu}
           aria-label="Toggle menu"
         >
@@ -108,7 +108,7 @@ const Navbar = () => {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.5 }}
-            className="md:hidden bg-white py-6 px-4 absolute w-full shadow-lg"
+            className="md:hidden bg-white dark:bg-portfolio-dark py-6 px-4 absolute w-full shadow-lg"
           >
             <nav className="flex flex-col space-y-5">
               {navItems.map((item, index) => (
@@ -118,7 +118,7 @@ const Navbar = () => {
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5, delay: 0.1 * index }}
                   href={`#${item}`} 
-                  className="font-medium capitalize text-gray-800 hover:text-portfolio-primary transition-colors duration-500 pl-2 border-l-2 border-transparent hover:border-portfolio-primary"
+                  className="font-medium capitalize text-gray-800 dark:text-gray-100 hover:text-portfolio-primary transition-colors duration-500 pl-2 border-l-2 border-transparent hover:border-portfolio-primary"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item}
