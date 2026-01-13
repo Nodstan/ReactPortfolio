@@ -112,7 +112,7 @@ const Skills = () => {
               </TabsTrigger>
             </TabsList>
             
-            <TabsContent value="coding" className="bg-card p-8 rounded-2xl shadow-lg">
+            <TabsContent value="coding" className="bg-card p-8 rounded-2xl shadow-lg min-h-[420px]">
               <div>
                 {codingSkills.map((skill, index) => (
                   <SkillBar key={index} skill={skill} index={index} />
@@ -120,7 +120,7 @@ const Skills = () => {
               </div>
             </TabsContent>
             
-            <TabsContent value="professional" className="bg-card p-8 rounded-2xl shadow-lg">
+            <TabsContent value="professional" className="bg-card p-8 rounded-2xl shadow-lg min-h-[420px]">
               <div>
                 {professionalSkills.map((skill, index) => (
                   <SkillBar key={index} skill={skill} index={index} />
