@@ -72,13 +72,13 @@ const About = () => {
               description: "Creating responsive and intuitive user interfaces with React, React Native, and Tailwind CSS."
             },
             {
-              title: "UI/UX Design",
-              description: "Designing visually appealing and user-friendly interfaces that deliver exceptional experiences."
-            },
-            {
               title: "Backend Development",
               description: "Working with Java and database technologies to create robust backend solutions."
-            }
+            },
+            {
+              title: "UI/UX Design",
+              description: "Designing visually appealing and user-friendly interfaces that deliver exceptional experiences."
+            }            
           ].map((service, index) => (
             <div key={index} className="bg-card p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-500">
               <div className="bg-portfolio-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
