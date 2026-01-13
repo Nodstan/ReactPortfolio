@@ -17,6 +17,7 @@ import resumeimage from '../assets/resume.png'
 import Facebook from '../assets/facebook.png'
 import Home from "../assets/crypto.jpg";
 import Buycom from "../assets/buycom.png";
+import estateflow from "../assets/estateflow.png";
 
 const projects = [
   {
@@ -79,16 +80,16 @@ const projects = [
     link: "",
     github: "https://github.com/Nodstan/BuyCom.git",
   },
-  // {
-  //   id: 7,
-  //   title: "FransisPets Admin Dashboard",
-  //   image: fransispets,
-  //   description:
-  //     "A comprehensive admin dashboard with data visualization and management features.",
-  //   tags: ["TypeScript", "CSS"],
-  //   link: "https://francis-pet-emannx.vercel.app/",
-  //   github: "https://github.com/emannnx/FrancisPetLocal",
-  // },
+  {
+    id: 7,
+    title: "Estate Flow",
+    image: estateflow,
+    description:
+      "A comprehensive admin dashboard with data visualization and management features.",
+    tags: ["React", "TypeScript", "Tailwind CSS"],
+    link: "https://real-estate-ashen-gamma.vercel.app/",
+    github: "https://github.com/Nodstan/RealEstate.git",
+  },
   // {
   //   id: 8,
   //   title: "Sushiman",
