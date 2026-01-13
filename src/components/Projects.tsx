@@ -32,6 +32,16 @@ const projects = [
   },
   {
     id: 2,
+    title: "Estate Flow",
+    image: estateflow,
+    description:
+      "A comprehensive admin dashboard with data visualization and management features.",
+    tags: ["React", "TypeScript", "Tailwind CSS"],
+    link: "https://real-estate-ashen-gamma.vercel.app/",
+    github: "https://github.com/Nodstan/RealEstate.git",
+  },
+  {
+    id: 3,
     title: "Facebook",
     image: Facebook,
     description:
@@ -41,7 +51,7 @@ const projects = [
     github: "https://github.com/Nodstan/Facebook.git",
   },
   {
-    id: 3,
+    id: 4,
     title: "Nutrition Guide",
     image: springImage,
     description:
@@ -51,7 +61,7 @@ const projects = [
     github: "https://github.com/emannnx/NutritionGuide",
   },
   {
-    id: 4,
+    id: 5,
     title: "Mood Tracker",
     image: springImage,
     description:
@@ -61,7 +71,7 @@ const projects = [
     github: "https://github.com/emannnx/Mood-Tracker",
   },
   {
-    id: 5,
+    id: 6,
     title: "CryptoDo - COMING SOON",
     image: Home,
     description:
@@ -71,7 +81,7 @@ const projects = [
     github: "https://github.com/Nodstan/BuyCom.git",
   },
   {
-    id: 6,
+    id: 7,
     title: "BuyCom - COMING SOON",
     image: Buycom,
     description:
@@ -79,16 +89,6 @@ const projects = [
     tags: ["React", "JavaScript", "CSS", "Expess.js"],
     link: "",
     github: "https://github.com/Nodstan/BuyCom.git",
-  },
-  {
-    id: 7,
-    title: "Estate Flow",
-    image: estateflow,
-    description:
-      "A comprehensive admin dashboard with data visualization and management features.",
-    tags: ["React", "TypeScript", "Tailwind CSS"],
-    link: "https://real-estate-ashen-gamma.vercel.app/",
-    github: "https://github.com/Nodstan/RealEstate.git",
   },
   // {
   //   id: 8,
@@ -223,7 +223,7 @@ const Projects = () => {
         {/* GitHub Link */}
         <div className="mt-8 text-center">
           <a
-            href="https://github.com/emannnx"
+            href="https://github.com/NodStan"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center text-portfolio-primary hover:text-portfolio-dark transition-colors font-medium"
