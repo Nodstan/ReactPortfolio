@@ -22,7 +22,7 @@ const About = () => {
               <div className="relative z-10">
                 <img 
                   src={port}
-                  alt="Iman Olabode Bello" 
+                  alt="Stanley Obitunwase" 
                   className="rounded-2xl w-full max-w-md mx-auto object-cover shadow-lg border-4 border-white"
                 />
 

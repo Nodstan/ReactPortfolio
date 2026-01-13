@@ -145,7 +145,7 @@ const Hero = () => {
                   animate={{ scale: 1, opacity: 1 }}
                   transition={{ duration: 0.5 }}
                   src={mypic}
-                  alt="Iman Olabode Bello" 
+                  alt="Stanley Obitunwase" 
                   className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-xl"
                 />
                 
