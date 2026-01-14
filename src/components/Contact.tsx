@@ -70,6 +70,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="py-20 bg-gradient-to-b from-gray-50 to-white dark:from-portfolio-dark dark:to-portfolio-dark relative overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none bg-grid-dark opacity-10"></div>
       <div className="absolute top-0 left-0 w-full h-64 bg-portfolio-secondary/30 -z-10 transform -skew-y-6"></div>
       
       <div className="container mx-auto px-4">

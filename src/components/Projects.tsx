@@ -166,7 +166,8 @@ const Projects = () => {
   };
 
   return (
-    <section id="projects" className="py-20 bg-gradient-to-b from-white to-gray-50 dark:from-portfolio-dark dark:to-portfolio-dark">
+    <section id="projects" className="py-20 bg-gradient-to-b from-white to-gray-50 dark:from-portfolio-dark dark:to-portfolio-dark relative">
+      <div className="absolute inset-0 pointer-events-none bg-grid-dark opacity-10"></div>
       <div className="container mx-auto px-4">
         <h2 className="section-heading text-center mx-auto">
           My <span className="text-portfolio-primary">Projects</span>

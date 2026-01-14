@@ -10,7 +10,8 @@ import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen relative">
+      <div className="absolute inset-0 pointer-events-none bg-grid-dark opacity-10"></div>
       <Navbar />
       <Hero />
       <About />

@@ -6,11 +6,11 @@ import { motion, useInView } from "framer-motion";
 const codingSkills = [
   { name: "HTML", level: 100 },
   { name: "CSS", level: 100 },
-  { name: "JavaScript", level: 70 },
-  { name: "TypeScript", level: 50 },
-  { name: "Java", level: 80 },
+  { name: "JavaScript", level: 100 },
+  { name: "TypeScript", level: 100 },
+  { name: "Java", level: 100 },
   { name: "React", level: 100 },
-  { name: "Tailwind CSS", level: 60 }
+  { name: "Tailwind CSS", level: 100 }
 ];
 
 const professionalSkills = [
@@ -83,9 +83,16 @@ const TechBadge = ({ tech, index }) => {
 const Skills = () => {
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
+  const techs = [
+    "HTML", "CSS", "JavaScript", "React",
+    "MongoDB", "SQL", "Tailwind CSS", "Spring Boot",
+    "React-Native","mySQl","Spring","Angular", "Git", "Java", "Responsive Design", "Express.js"
+  ];
+  const [visibleTechCount, setVisibleTechCount] = useState(4);
 
   return (
-    <section id="skills" ref={sectionRef} className="py-20 bg-gradient-to-b from-gray-50 to-white dark:from-portfolio-dark dark:to-portfolio-dark overflow-hidden">
+    <section id="skills" ref={sectionRef} className="py-20 bg-gradient-to-b from-gray-50 to-white dark:from-portfolio-dark dark:to-portfolio-dark overflow-hidden relative">
+      <div className="absolute inset-0 pointer-events-none bg-grid-dark opacity-10"></div>
       <div className="container mx-auto px-4">
         <motion.h2 
           initial={{ opacity: 0, y: -20 }}
@@ -111,22 +118,23 @@ const Skills = () => {
                 Professional Skills
               </TabsTrigger>
             </TabsList>
-            
-            <TabsContent value="coding" className="bg-card p-8 rounded-2xl shadow-lg min-h-[420px]">
-              <div>
-                {codingSkills.map((skill, index) => (
-                  <SkillBar key={index} skill={skill} index={index} />
-                ))}
-              </div>
-            </TabsContent>
-            
-            <TabsContent value="professional" className="bg-card p-8 rounded-2xl shadow-lg min-h-[420px]">
-              <div>
-                {professionalSkills.map((skill, index) => (
-                  <SkillBar key={index} skill={skill} index={index} />
-                ))}
-              </div>
-            </TabsContent>
+            <div>
+              <TabsContent value="coding" className="bg-card p-8 rounded-2xl shadow-lg">
+                <div>
+                  {codingSkills.map((skill, index) => (
+                    <SkillBar key={index} skill={skill} index={index} />
+                  ))}
+                </div>
+              </TabsContent>
+              
+              <TabsContent value="professional" className="bg-card p-8 rounded-2xl shadow-lg">
+                <div>
+                  {professionalSkills.map((skill, index) => (
+                    <SkillBar key={index} skill={skill} index={index} />
+                  ))}
+                </div>
+              </TabsContent>
+            </div>
           </Tabs>
         </motion.div>
         
@@ -134,15 +142,30 @@ const Skills = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.5, delay: 0.4, ease: "easeOut" }}
-          className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6 text-center"
+          className="mt-20"
         >
-          {[
-            "HTML", "CSS", "JavaScript", "React", 
-            "MongoDB", "SQL", "Tailwind CSS", "Spring Boot",
-            "React-Native","mySQl","Spring","Angular", "Git", "Java", "Responsive Design", "Express.js"
-          ].map((tech, index) => (
-            <TechBadge key={index} tech={tech} index={index} />
-          ))}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            {techs.slice(0, visibleTechCount).map((tech, index) => (
+              <TechBadge key={index} tech={tech} index={index} />
+            ))}
+          </div>
+          <div className="mt-8 text-center">
+            {visibleTechCount < techs.length ? (
+              <button
+                onClick={() => setVisibleTechCount(techs.length)}
+                className="btn-secondary inline-flex items-center"
+              >
+                View More of my Skills
+              </button>
+            ) : (
+              <button
+                onClick={() => setVisibleTechCount(4)}
+                className="btn-secondary inline-flex items-center"
+              >
+                View Less
+              </button>
+            )}
+          </div>
         </motion.div>
       </div>
     </section>
